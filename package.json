@@ -1,0 +1,27 @@
+{
+  "name": "first-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:linux": "electron-builder --linux"
+  },
+  "author": "Izzatur Royhan <royhan.ir31@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/royhan31/first-app.git",
+  "build": {
+    "appId": "first-app",
+    "linux": {
+      "target": [
+        "deb",
+        "snap"
+      ],
+      "category": "Utility"
+    }
+  },
+  "devDependencies": {
+    "electron": "^9.2.0",
+    "electron-builder": "20.38.5"
+  }
+}
